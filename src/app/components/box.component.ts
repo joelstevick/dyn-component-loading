@@ -1,10 +1,19 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "box",
-  template: "<div>red</div>",
+  template: `
+    <div [class]="color">{{ label }}</div>
+  `,
   styles: [
-    `div 
+    `
+    .red {
+      background-color: red;
+    }
+    .green {
+       background-color: green;
+    }
+    div 
     { 
       display: inline-block;
       margin: 10px;
@@ -16,6 +25,12 @@ import { Component } from "@angular/core";
       `
   ]
 })
-export class Box {
-  
+export class Box implements OnInit {
+  color: string;
+  label: string;
+
+  ngOnInit() {
+    this.color = "red";
+    this.label = "foo";
+  }
 }
