@@ -6,6 +6,8 @@ import { Component } from "@angular/core";
   styles: [
     `div 
     { 
+      display: inline-block;
+      margin: 10px;
       height: 100px; 
       line-height: 100px;
       width: 100px;
