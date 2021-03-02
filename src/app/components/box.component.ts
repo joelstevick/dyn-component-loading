@@ -25,7 +25,7 @@ import { Component, OnInit } from "@angular/core";
       `
   ]
 })
-export class Box implements OnInit {
+export class BoxComponent implements OnInit {
   color: string;
   label: string;
 
