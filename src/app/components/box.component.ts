@@ -16,4 +16,6 @@ import { Component } from "@angular/core";
       `
   ]
 })
-export class Box {}
+export class Box {
+  
+}
