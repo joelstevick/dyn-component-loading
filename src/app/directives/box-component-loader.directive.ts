@@ -1,8 +1,8 @@
 import { Directive, ViewContainerRef } from "@angular/core";
 
 @Directive({
-  selector: "[chatComponentLoader]"
+  selector: "[boxComponentLoader]"
 })
-export class DynComponentLoaderDirective {
+export class BoxComponentLoaderDirective {
   constructor(public viewContainerRef: ViewContainerRef) {}
 }
