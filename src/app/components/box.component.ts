@@ -29,8 +29,5 @@ export class BoxComponent implements OnInit {
   color: string;
   label: string;
 
-  ngOnInit() {
-    this.color = "red";
-    this.label = "foo";
-  }
+  ngOnInit() {}
 }
